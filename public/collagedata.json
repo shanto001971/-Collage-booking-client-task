@@ -1,0 +1,107 @@
+[
+    {
+        "collageImage": "https://www.cherwell.org/wp-content/uploads/2020/04/3240.jpg",
+        "collageName": "ABC College",
+        "admissionDate": "2023-08-15",
+        "events": [
+            "TechFest",
+            "Cultural Night",
+            "Sports Meet"
+        ],
+        "researchHistory": "Founded in 1950",
+        "sports": true,
+        "admissionProcess": "Online application and interview",
+        "eventDetails": "Events will be held in the college auditorium.",
+        "researchWork": "Active research in various fields",
+        "sportsCategories": [
+            "Football",
+            "Basketball",
+            "Swimming",
+            "Table Tennis"
+        ]
+    },
+    {
+        "collageImage": "https://cdn.thenigerianvoice.com/story/XGltYWdlc1xjb250ZW50XG94Zm9yZHVuaXZlcnNpdHkuanBnfDUwMHwzNTB8.jpg",
+        "collageName": "XYZ College",
+        "admissionDate": "2023-09-01",
+        "events": [
+            "Literary Festival",
+            "Dance Competition",
+            "Science Expo"
+        ],
+        "researchHistory": "Established in 1990",
+        "sports": false,
+        "admissionProcess": "Submit application form in person.",
+        "eventDetails": "Events will take place in the college courtyard.",
+        "researchWork": "Focusing on sustainable development research",
+        "sportsCategories": []
+    },
+    {
+        "collageImage": "https://www.smallworldfs.com/filemanager/userfiles/blog/cambridge-university.jpg",
+        "collageName": "123 College",
+        "admissionDate": "2023-07-30",
+        "events": [
+            "Music Fest",
+            "Art Exhibition",
+            "Robotics Challenge"
+        ],
+        "researchHistory": "Pioneering research in the field of biology",
+        "sports": true,
+        "admissionProcess": "Through entrance exam and interview.",
+        "eventDetails": "Events are open to the public.",
+        "researchWork": "Published groundbreaking papers in genetics.",
+        "sportsCategories": [
+            "Cricket",
+            "Tennis",
+            "Badminton",
+            "Squash"
+        ]
+    }
+]
+
+
+
+[
+    {
+      "collageImage": "https://www.collegechalo.com/news/wp-content/uploads/2023/04/amity-distance-learning.png",
+      "collageName": "Best Law collage in Delhi NCR-Private",
+      "collageRating": 4.5,
+      "admissionDate": "2023-09-01",
+      "numberOfTheResearch": 120
+    },
+    {
+      "collageImage": "https://cache.careers360.mobi/media/presets/720X480/colleges/social-media/media-gallery/9298/2018/12/6/Central%20Library%20of%20Amity%20Law%20School%20Noida_Library.jpg",
+      "collageName": "Elon Collage&University",
+      "collageRating": 4.2,
+      "admissionDate": "2023-08-15",
+      "numberOfTheResearch": 80
+    },
+    {
+      "collageImage": "https://images.shiksha.com/mediadata/images/1585722066phpl3UX5E.jpeg",
+      "collageName": "WASSCE Remedial school and collage",
+      "collageRating": 4.8,
+      "admissionDate": "2023-09-10",
+      "numberOfTheResearch": 200
+    },
+    {
+      "collageImage": "https://static.toiimg.com/thumb/msid-83026251,width-1280,height-720,resizemode-4/.jpg",
+      "collageName": "NU collage",
+      "collageRating": 3.9,
+      "admissionDate": "2023-08-25",
+      "numberOfTheResearch": 50
+    },
+    {
+      "collageImage": "https://www.iilsindia.com/blogs/wp-content/uploads/2016/09/Law-Colleges-in-Delhi.jpg",
+      "collageName": "CUNY Queens collage",
+      "collageRating": 4.6,
+      "admissionDate": "2023-09-05",
+      "numberOfTheResearch": 150
+    },
+    {
+      "collageImage": "https://theqna.org/wp-content/uploads/2020/10/Lloyd-Law-College-Noida-law-colleges-in-Delhi-2.jpg",
+      "collageName": "Southeast Missouri State collage",
+      "collageRating": 4.0,
+      "admissionDate": "2023-08-20",
+      "numberOfTheResearch": 90
+    }
+  ]
