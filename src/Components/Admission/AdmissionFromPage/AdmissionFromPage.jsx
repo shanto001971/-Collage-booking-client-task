@@ -1,16 +1,18 @@
 import { useForm } from "react-hook-form";
 import useAxios from "../../Hooks/Axios/useAxios";
 import Swal from "sweetalert2";
-import { useLoaderData } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
 const img_hosting_token = import.meta.env.VITE_IMAGE_UPLOAD_TOKEN;
 
 const AdmissionFromPage = () => {
-    const { register, handleSubmit, formState: { errors }, reset } = useForm();   
+    const { register, handleSubmit, formState: { errors }, reset } = useForm();
     const image_hosting_url = `https://api.imgbb.com/1/upload?key=${img_hosting_token}`
     const [axiosSecure] = useAxios()
+    const {id} = useParams()
+    // console.log(id)
     const submit = (data) => {
-        console.log(data.phoneNumber)
+        // console.log(data.phoneNumber)
         const formImage = new FormData();
         formImage.append('image', data.image[0])
 
@@ -32,6 +34,7 @@ const AdmissionFromPage = () => {
                         name: data.name,
                         phoneNumber: data.phoneNumber,
                         subject: data.subject,
+                        submitID:id
                     }
                     axiosSecure.post('/myCollage', myCollage)
                         .then(data => {

@@ -45,6 +45,7 @@ export const router = createBrowserRouter([
       {
         path: '/myCollage',
         element: <MyCollagePage/>,
+        loader: () => fetch('http://localhost:5000/collage')
       },
     ]
   },
