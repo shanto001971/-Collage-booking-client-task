@@ -7,6 +7,9 @@ import DetailsPage from "../Components/DetailsPage/DetailsPage";
 import AdmissionPage from "../Components/Admission/AdmissionPage/AdmissionPage";
 import AdmissionFromPage from "../Components/Admission/AdmissionFromPage/AdmissionFromPage";
 import MyCollagePage from "../Components/MyCollage/MyCollagePage/MyCollagePage";
+import LogInPage from "../Components/LogInPage/LogInPage";
+import SingUpPage from "../Components/SingUpPage/SingUpPage";
+import ProfileRoute from "../Components/ProfileRoute/ProfileRoute";
 
 export const router = createBrowserRouter([
   {
@@ -45,7 +48,19 @@ export const router = createBrowserRouter([
       {
         path: '/myCollage',
         element: <MyCollagePage/>,
-        loader: () => fetch('http://localhost:5000/collage')
+        loader: () => fetch('http://localhost:5000/myCollage')
+      },
+      {
+        path: '/login',
+        element: <LogInPage/>,
+      },
+      {
+        path: '/singUp',
+        element: <SingUpPage/>,
+      },
+      {
+        path: '/profile',
+        element: <ProfileRoute/>,
       },
     ]
   },
