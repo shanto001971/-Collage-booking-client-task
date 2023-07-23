@@ -6,6 +6,7 @@ import CollagePagerRoute from "../Components/CollagePagerRoute/CollagePagerRoute
 import DetailsPage from "../Components/DetailsPage/DetailsPage";
 import AdmissionPage from "../Components/Admission/AdmissionPage/AdmissionPage";
 import AdmissionFromPage from "../Components/Admission/AdmissionFromPage/AdmissionFromPage";
+import MyCollagePage from "../Components/MyCollage/MyCollagePage/MyCollagePage";
 
 export const router = createBrowserRouter([
   {
@@ -40,6 +41,10 @@ export const router = createBrowserRouter([
       {
         path: '/admissionFrom/:id',
         element: <AdmissionFromPage/>,
+      },
+      {
+        path: '/myCollage',
+        element: <MyCollagePage/>,
       },
     ]
   },

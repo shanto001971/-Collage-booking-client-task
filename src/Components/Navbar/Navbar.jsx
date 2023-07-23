@@ -13,7 +13,7 @@ const Navbar = () => {
                         <Link to='/'><li><a>Home</a></li></Link>
                         <Link to='/collage'><li><a>Colleges</a></li></Link>
                         <Link to='/admission'><li><a>Admission</a></li></Link>
-                        <li><a>My College</a></li>
+                        <Link to='/myCollage'><li><a>My College</a></li></Link>
                     </ul>
                 </div>
                 <a className="btn btn-ghost normal-case text-2xl font-serif"> College booking</a>
@@ -23,7 +23,7 @@ const Navbar = () => {
                     <Link to='/'><li><a>Home</a></li></Link>
                     <Link to='collage'><li><a>Colleges</a></li></Link>
                     <Link to='/admission'><li><a>Admission</a></li></Link>
-                    <li><a>My College</a></li>
+                    <Link to='/myCollage'><li><a>My College</a></li></Link>
                 </ul>
             </div>
             <div className="form-control navbar-end">
