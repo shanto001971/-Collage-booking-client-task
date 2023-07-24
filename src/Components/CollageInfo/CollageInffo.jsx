@@ -6,7 +6,7 @@ const CollageInffo = () => {
     const [collageData, setCollageDdata] = useState([])
 
     useEffect(() => {
-        fetch('http://localhost:5000/collageData')
+        fetch('https://collage-task-server-side.vercel.app/collageData')
             .then(res => res.json())
             .then(data => setCollageDdata(data))
     }, [])

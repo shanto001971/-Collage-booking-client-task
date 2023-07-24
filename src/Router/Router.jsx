@@ -23,7 +23,7 @@ export const router = createBrowserRouter([
       {
         path: '/collageData/:id',
         element: <CollageDetlias />,
-        loader: ({ params }) => fetch(`http://localhost:5000/collageData/${params.id}`)
+        loader: ({ params }) => fetch(`https://collage-task-server-side.vercel.app/collageData/${params.id}`)
 
       },
       {
@@ -34,12 +34,12 @@ export const router = createBrowserRouter([
       {
         path: '/collagePageDetails/:id',
         element: <DetailsPage/>,
-        loader: ({ params }) => fetch(`http://localhost:5000/collage/${params.id}`)
+        loader: ({ params }) => fetch(`https://collage-task-server-side.vercel.app/collage/${params.id}`)
       },
       {
         path: '/admission',
         element: <AdmissionPage/>,
-        loader: () => fetch('http://localhost:5000/collage')
+        loader: () => fetch('https://collage-task-server-side.vercel.app/collage')
       },
       {
         path: '/admissionFrom/:id',
@@ -48,7 +48,7 @@ export const router = createBrowserRouter([
       {
         path: '/myCollage',
         element: <MyCollagePage/>,
-        loader: () => fetch('http://localhost:5000/myCollage')
+        loader: () => fetch('https://collage-task-server-side.vercel.app/myCollage')
       },
       {
         path: '/login',

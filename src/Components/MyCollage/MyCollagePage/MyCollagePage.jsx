@@ -13,7 +13,7 @@ const MyCollagePage = () => {
 
     // console.log(collageData)
     // useEffect(() => {
-    //     fetch('http://localhost:5000/myCollage')
+    //     fetch('https://collage-task-server-side.vercel.app/myCollage')
     //         .then(res => res.json())
     //         .then(data => setCollageData(data.map(itemId => itemId.submitID)))
     // }, [])
