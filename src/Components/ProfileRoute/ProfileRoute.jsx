@@ -5,7 +5,7 @@ import useAxios from '../Hooks/Axios/useAxios';
 const ProfileRoute = () => {
     const { user } = useContext(authContext)
     const [profile, setProfile] = useState([])
-    const [axiosSecure] = useAxios()
+    // const [axiosSecure] = useAxios()
     // const [name] = profile[0]
 
     // console.log(name)
