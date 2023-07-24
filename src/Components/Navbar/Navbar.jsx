@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { authContext } from "../../AuthProvider/AuthProvider";
 import { BsSearch } from 'react-icons/Bs';
@@ -7,8 +7,15 @@ import { BsSearch } from 'react-icons/Bs';
 
 const Navbar = () => {
     const { user, LogOutUser } = useContext(authContext);
-    console.log(user)
-
+    // console.log(user)
+    const searchRef = useRef(null)
+    const [search, setSearch] = useState('');
+    
+    const handelSearch = () => {
+        setSearch(searchRef.current.value)
+        
+    }
+    console.log(search)
     const logOutUser = () => {
         LogOutUser()
             .then(result => { })
@@ -40,8 +47,8 @@ const Navbar = () => {
             <div className="form-control navbar-end">
                 <div className="flex gap-2 items-center">
                     <div className="flex items-center gap-2 relative">
-                        <button className="absolute right-5"><BsSearch /></button>
-                        <input type="text" placeholder="Search" className="input input-bordered w-24 md:w-auto" />
+                        <button onClick={handelSearch} className="absolute right-5"><BsSearch /></button>
+                        <input type="text" ref={searchRef} placeholder="Search" className="input input-bordered w-24 md:w-auto" />
                     </div>
                     {
                         user && <Link to='/profile'><img title={user?.displayName} className="w-12 h-12 rounded-full" src={user?.photoURL} alt="" /></Link>
